@@ -5,3 +5,178 @@
  *= require_self
  *= require_tree . 
 */
+/* layouts/application.html.erb */
+body {
+	padding-top: 60px;
+/*	-webkit-font-smoothing: antialiased;*/
+}
+
+footer{
+	bottom: 0;
+	position: fixed;
+	z-index: -100;
+}
+
+textarea{
+	resize: none;
+}
+
+.login-display{
+	color: #BFBFBF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.content {
+	margin-left: 0 !important;
+}
+
+.big-alert {
+	font-size: 2em;
+	text-align: center;
+}
+
+.truncate-text {
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* jQuery.ui.butterbar styles */
+.ui-butterbar {
+  background-color:#c9c724;
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  padding-left:15px;
+  padding-right:15px;
+  padding-bottom:2px;
+  padding-top:3px;
+  border-style:solid;
+  border-width:1px;
+  border-color:#807609;
+}
+.ui-butterbar-link {
+  font-weight:bold;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+/* devise/sessions/new.html.erb */
+.hero-unit .row {
+	text-align: center !important;
+}
+
+.form-stacked legend {
+	padding-bottom: 10px !important;
+}
+
+.form-stacked label {
+	list-style-type: none;
+}
+
+#user_new label {
+	text-align: center;
+}
+
+.form-stacked li{
+	list-style-type: none;
+}
+
+td.edit{
+	text-align: center;
+}
+
+@-webkit-keyframes flash {
+    0% {
+    	background-color: auto;
+		color: auto;
+    }
+	25% {
+		color: white;
+	}
+    50% {
+		background-color: hsla(120, 40%, 46%, 0.75);
+		color: white;
+    }
+	75% {
+		color: auto;
+	}
+	100% {
+		background-color: auto;
+		color: auto;
+	}
+}
+
+.flash-it td{
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-name: flash;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+.edit-in-place-edit-text{
+	line-height: 16px;
+}
+
+#deliverable-form,
+.project-form,
+.user-form,
+#effort-log-form,
+#lifecycle-form{
+	padding-left: 0 !important;
+}
+
+#deliverable-form #deliverable-name,
+#deliverable-form #deliverable-description,
+.project-form input,
+.project-form textarea,
+.user-form input,
+.user-form textarea,
+#lifecycle-form input,
+#lifecycle-form textarea{
+	width: 413px;
+}
+
+.project-form select,
+.user-form select{
+	width: 424px;
+}
+
+.inline-labels label{
+	display: inline;
+}
+
+#deliverable-form .inline-labels label {
+	padding-right: 110px;
+}
+
+.green{
+	color: #46a546 !important;
+}
+
+.yellow{
+	color: #ffc40d !important;
+}
+
+.orange{
+	color: #f89406 !important;
+}
+
+.red{
+	color: #9d261d !important;
+}
+
+.blue{
+	color: #049cdb !important;
+}
+
+.purple{
+	color: #7a43b6 !important;
+}
+
+.modal.wider{
+	width: 840px;
+	margin: -250px 0 0 -420px;
+}

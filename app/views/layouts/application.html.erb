@@ -2,6 +2,7 @@
 <html>
 	<head>
 	  <title>Bruno's site</title>
+      <%= stylesheet_link_tag 'application' %>
 		<%= stylesheet_link_tag 'bootstrap.min' %>
 		<%= stylesheet_link_tag 'bootstrap' %>
 		<%= stylesheet_link_tag 'bootstrap-responsive' %>
@@ -14,13 +15,16 @@
 				$('.watermarked').watermark('watermark')
 			});
 		</script>
+
 	</head>
 	<body>
-	<%= render :partial => 'shared/header'%>
-	<div class="container-fluid">
-				<%= yield %>
-			</div>
-			<%= render :partial => 'shared/footer'%>
+    	<%= render :partial => 'shared/header'%>
+    <div class="container-fluid">
+      <div class="content">
+    	<%= yield %>
+        </div>
     </div>
+
+    <%= render :partial => 'shared/footer'%>
 	</body>
 </html>
