@@ -1,4 +1,6 @@
 PersonalSite2::Application.routes.draw do
+  resource :home, :only => ['show'], :controller => :home
+  root :to => 'home#show'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
